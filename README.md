@@ -16,6 +16,8 @@ Flexible Exploration with Filters:
 
 By combining data visualization and user-friendly filters, this dashboard empowers data-driven decision making for sales strategies, marketing initiatives, and potentially eco-conscious efforts within the Lazio car market.
 
+Please visualize and use the dashboard at the following by clicking [here](https://lookerstudio.google.com/reporting/1fdade85-34b0-4e36-8552-6ea9ac601eb2/page/Az7uD)
+
 ![image](https://github.com/PietroRuffo/Lazio-Car-Sales-Performance-Emissions-Dashboard/assets/99428541/87031079-cb73-42eb-b96c-3b7fec91d5c8)
 
 
