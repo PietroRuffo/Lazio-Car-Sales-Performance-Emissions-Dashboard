@@ -41,7 +41,7 @@ Instructions:
 
 5. Navigate to "C:\Users\...\de_final_project\terraform\keys" and move the downloaded JSON file here, renaming it as "my_cred.json".
 6. Open "C:\Users\...\de_final_project\terraform\variables.tf" and update the project_id at line 9 and the bucket's name at line 34. Similarly, update "main.tf" at line 17 with the bucket's name.
-7. Using the CLI, navigate to "C:\Users\...de_final_project\terraform" and run:
+7. Using the CLI, navigate to "C:\Users\...\de_final_project\terraform" and run:
 
     ```bash
     # Initialize state file (.tfstate)
@@ -63,7 +63,7 @@ Instructions:
 8. Once GCP resources are created, navigate to "C:\Users\...de_final_project\lazio_car".
 
    ```
-    cd "C:\Users\...de_final_project\lazio_car"
+    cd "C:\Users\...\de_final_project\lazio_car"
     ```
 9. Open Docker by double-clicking on the Docker desktop icon.
 10. Run:
