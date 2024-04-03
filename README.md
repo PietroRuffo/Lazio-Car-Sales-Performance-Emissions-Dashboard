@@ -2,6 +2,8 @@
 
 This work, developed as the final project for [Data Engineering Zoomcamp 2024](https://github.com/DataTalksClub/data-engineering-zoomcamp), introduces an interactive [dashboard](https://lookerstudio.google.com/reporting/1fdade85-34b0-4e36-8552-6ea9ac601eb2/page/Az7uD) tailored for stakeholders in the [Lazio](https://en.wikipedia.org/wiki/Lazio#:~:text=Geography,-Relief%20map%20of&text=Lazio%20comprises%20a%20land%20area,Tyrrhenian%20Sea%20to%20the%20west.) car industry. It offers essential insights into car sales, registrations, and vehicle specifications, enabling informed decision-making.
 
+Data Source: [Italian Ministry of Transport] (https://dati.mit.gov.it/catalog/dataset/dataset-parco-circolante-dei-veicoli/resource/0e49d85b-6836-492f-bafc-f612aa8ea23d)
+
 *NB. Data refers to new cars only (second/third hand cars are excluded) and is updated to the end of 2019.*
 
 Key Insights:
