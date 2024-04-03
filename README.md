@@ -138,10 +138,10 @@ Instructions:
       
     - **Pink Block 2:**
       - Imports modules for YAML handling and filesystem operations.
-      - Defines a function to write a YAML configuration file with specific settings.
+      - Defines a function to write a YAML configuration file with specific settings to connect DBT'S Mage integration to Bigquery.
       
     - **Orange Block 3 (DBT Model 1):**
-      - Defines a DBT model to transform source data by renaming columns, applying filters (we are keeping only private cars), and aggregating sales data.
+      - Defines a DBT model to transform source data by renaming columns, applying filters (we are keeping only private cars, original dataset contains all vehicles), and aggregating sales data.
       
     - **Orange Block 4 (DBT Model 2):**
       - Defines another DBT model with materialization and partitioning by registration_year.
