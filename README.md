@@ -10,7 +10,7 @@ Key Insights:
 - **Total Cars Sold**: Provide an overview of the total number of cars sold within the specified perimiter.
 - **Sales Performance by Automaker**: Identify top performers in the region through a clear bar chart.
 - **Seasonal Sales Trends**: Uncover peak sales months with a line chart, allowing for optimized resource allocation and targeted marketing campaigns.
-- **Environmental Impact Analysis**: Analyze the average CO2 emissions of different automakers' offerings to understand their environmental impact within Lazio.
+- **Environmental Impact Analysis**: Analyze the average CO2 emissions of different automakers' cars to understand their environmental impact within Lazio.
 - **Euro Class Distribution**: Gain insights into the distribution of cars by their Euro class compliance standards.
 
 Flexible Exploration with Filters:
