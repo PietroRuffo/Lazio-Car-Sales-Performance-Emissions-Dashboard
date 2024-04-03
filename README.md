@@ -60,7 +60,7 @@ Instructions:
 
 
 
-8. Once GCP resources are created, navigate to "C:\Users\...\Lazio Car Sales Performance & Emissions Dashboard\lazio_car".
+8. Once GCP resources are created, navigate to "C:\Users\...de_final_project\lazio_car".
 
    ```
     cd "C:\Users\...\Lazio Car Sales Performance & Emissions Dashboard\de_final_project\lazio_car"
