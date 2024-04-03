@@ -1,0 +1,107 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: teal
+  configuration: {}
+  downstream_blocks:
+  - create_profile
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: pull_lazio_car_repo
+  retry_config: null
+  status: updated
+  timeout: null
+  type: custom
+  upstream_blocks: []
+  uuid: pull_lazio_car_repo
+- all_upstream_blocks_executed: false
+  color: pink
+  configuration: {}
+  downstream_blocks:
+  - dbt/lazio_car/models/staging/stg_staging__dev_gcs_to_bigquery_vehicle_lazio_to_bigquery_v1
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: create_profile
+  retry_config: null
+  status: executed
+  timeout: null
+  type: custom
+  upstream_blocks:
+  - pull_lazio_car_repo
+  uuid: create_profile
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    dbt_profile_target: development
+    dbt_profiles_file_path: dbt/lazio_car/profiles.yml
+    dbt_project_name: dbt/lazio_car
+    file_path: dbt/lazio_car/models/staging/stg_staging__dev_gcs_to_bigquery_vehicle_lazio_to_bigquery_v1.sql
+    file_source:
+      path: dbt/lazio_car/models/staging/stg_staging__dev_gcs_to_bigquery_vehicle_lazio_to_bigquery_v1.sql
+      project_path: dbt/lazio_car
+    limit: '10'
+  downstream_blocks:
+  - dbt/lazio_car/models/core/car_sales_Lazio
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: stg_staging__dev_gcs_to_bigquery_vehicle_lazio_to_bigquery_v1
+  retry_config: null
+  status: executed
+  timeout: null
+  type: dbt
+  upstream_blocks:
+  - create_profile
+  uuid: dbt/lazio_car/models/staging/stg_staging__dev_gcs_to_bigquery_vehicle_lazio_to_bigquery_v1
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    dbt_profile_target: development
+    dbt_profiles_file_path: dbt/lazio_car/profiles.yml
+    dbt_project_name: dbt/lazio_car
+    file_path: dbt/lazio_car/models/core/car_sales_Lazio.sql
+    file_source:
+      path: dbt/lazio_car/models/core/car_sales_Lazio.sql
+      project_path: dbt/lazio_car
+    limit: '10'
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/lazio_car/models/core/car_sales_Lazio
+  retry_config: null
+  status: executed
+  timeout: null
+  type: dbt
+  upstream_blocks:
+  - dbt/lazio_car/models/staging/stg_staging__dev_gcs_to_bigquery_vehicle_lazio_to_bigquery_v1
+  uuid: dbt/lazio_car/models/core/car_sales_Lazio
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-04-01 00:11:24.302727+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: lazio_car_dbt
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: lazio_car_dbt
+variables_dir: /home/src/mage_data/lazio_car_sales
+widgets: []
