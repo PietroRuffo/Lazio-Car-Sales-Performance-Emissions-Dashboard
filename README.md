@@ -60,7 +60,7 @@ Instructions:
 8. Once GCP resources are created, navigate to "C:\Users\...\Lazio Car Sales Performance & Emissions Dashboard\lazio_car".
 
    ```
-    cd "C:\Users\...\Lazio Car Sales Performance & Emissions Dashboard\lazio_car"
+    cd "C:\Users\...\Lazio Car Sales Performance & Emissions Dashboard\de_final_project\lazio_car"
     ```
 9. Open Docker by double-clicking on the Docker desktop icon.
 10. Run:
