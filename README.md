@@ -16,11 +16,12 @@ Flexible Exploration with Filters:
 
 By combining data visualization and user-friendly filters, this dashboard empowers data-driven decision making for sales strategies, marketing initiatives, and potentially eco-conscious efforts within the Lazio car market.
 
-![image](https://github.com/PietroRuffo/Lazio-Car-Sales-Performance-Emissions-Dashboard/assets/99428541/960d67e6-d744-4108-b028-e1c62dbfdd81)
+![image](https://github.com/PietroRuffo/Lazio-Car-Sales-Performance-Emissions-Dashboard/assets/99428541/87031079-cb73-42eb-b96c-3b7fec91d5c8)
+
 
 The following diagram indicates how the project was set up:
 
-![image](https://github.com/PietroRuffo/Lazio-Car-Sales-Performance-Emissions-Dashboard/assets/99428541/d4a88703-a6cb-451e-a250-47b0abbed819)
+![image](https://github.com/PietroRuffo/Lazio-Car-Sales-Performance-Emissions-Dashboard/assets/99428541/9cd5b7c4-b638-4124-9a4f-0f75f8925533)
 
 
 The diagram shows a **monthly** **batch** process that can be updated **manually**. It starts with CSV data from the Italian Ministry of Infrastructure and Transportation. This data is converted to Parquet format and transformed and then uploaded to a Google Cloud Platform (GCP) Bucket. After more transformations, it's stored in a BigQuery data warehouse. Inside the warehouse, DBT is used for further transformations. Finally, the cleaned data is used to create a dashboard in Looker Studio. All of this happens within Mage.ai running on a Docker container. GCP resources are set up in advance using Terraform.
@@ -74,11 +75,7 @@ Instructions:
 13. In the left sidebar, click on "Edit pipeline" and scroll to the yellow block ("data_exporter_to_gcp_bucket"). Click the three dots on the upper right and select "Execute with all upstream blocks":
 
 
-![image](https://github.com/PietroRuffo/Lazio-Car-Sales-Performance-Emissions-Dashboard/assets/99428541/b93b770f-604a-4989-9d21-f79669027062) 
-
-
-![image](https://github.com/PietroRuffo/Lazio-Car-Sales-Performance-Emissions-Dashboard/assets/99428541/96159c52-79d2-4be5-869e-6f552e1db661)
-
+![image](https://github.com/PietroRuffo/Lazio-Car-Sales-Performance-Emissions-Dashboard/assets/99428541/067c0eab-cbaf-4bd9-aa4f-9ee7780cc840)
 
 
   - **data_exporter_to_gcp_bucket pipeline overview:**
@@ -103,7 +100,7 @@ Instructions:
 14. Once execution is completed, return to the "Pipelines" section and repeat the same procedure for pipeline "gcs_to_bigquery". Simply scroll down to the last code block of each pipeline, click the three dots, and select "Execute with all upstream blocks".
 
     
-![image](https://github.com/PietroRuffo/Lazio-Car-Sales-Performance-Emissions-Dashboard/assets/99428541/360963a2-62ac-4695-b52a-1eebbe27fafd)
+![image](https://github.com/PietroRuffo/Lazio-Car-Sales-Performance-Emissions-Dashboard/assets/99428541/d2542a02-ac36-4780-9822-77f8cb705900)
 
 
 - **data_exporter_to_gcp_bucket pipeline overview:**
@@ -128,7 +125,7 @@ Instructions:
         
 15. Repeat what you did at step 14. with pipeline "lazio_car_dbt".
 
-![image](https://github.com/PietroRuffo/Lazio-Car-Sales-Performance-Emissions-Dashboard/assets/99428541/c38e20be-30c6-4630-bdc6-be0269ef8979)
+![image](https://github.com/PietroRuffo/Lazio-Car-Sales-Performance-Emissions-Dashboard/assets/99428541/4cb2e375-eb77-4870-a94c-99d1434ddab7)
 
 - **lazio_car_dbt pipeline overview:**
   - Here's a brief overview of what each code block does:
